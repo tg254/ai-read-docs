@@ -123,9 +123,7 @@ with st.sidebar:
     
     st.divider()
     
-    api_key = st.text_input("🔑 OpenAI API Key", type="password",
-                            value=os.getenv("OPENAI_API_KEY", ""),
-                            help="Get your key at platform.openai.com")
+    api_key = os.getenv("OPENAI_API_KEY", "")
     st.divider()
     
     if st.button("🔄 Start Fresh"):
