@@ -145,7 +145,7 @@ if "pdf_name" not in st.session_state:
     st.session_state.pdf_name = ""
 
 def extract_pdf_text(pdf_file):
-    reader = PyPDF2.PdfReader(pdf_file)
+    reader = pypdf.PdfReader(pdf_file)
     text = ""
     for page in reader.pages:
         text += page.extract_text()
