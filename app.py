@@ -121,10 +121,10 @@ with st.sidebar:
     - 🏥 Medical reports
     """)
     
-    st.divider()
+    #st.divider()
     
     api_key = os.getenv("OPENAI_API_KEY", "")
-    st.divider()
+    #st.divider()
     
     if st.button("🔄 Start Fresh"):
         st.session_state.messages = []
