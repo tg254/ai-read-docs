@@ -1,8 +1,8 @@
 import os
 import streamlit as st
 from openai import OpenAI
-import PyPDF2
-from openai import OpenAI
+import pypdf
+from openai import OpenAI 
 
 st.set_page_config(page_title="SmartDocs AI Assistant", page_icon="🧠", layout="centered")
 
